@@ -1,68 +1,65 @@
-# Warung Digital 🛒
+# Warung Digital — Domain: Warung Digital (E-Commerce Sederhana)
 
-App kasir & katalog produk sederhana untuk UMKM warung, dibuat dengan React Native (Expo).
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-000020?style=flat&logo=expo&logoColor=white)
+![AsyncStorage](https://img.shields.io/badge/AsyncStorage-Local_Persistence-00b894)
 
-## 📱 Domain
-Domain C — Warung Digital
+> Aplikasi mobile Warung Digital untuk mengelola katalog produk, keranjang belanja, dan riwayat transaksi secara sederhana. Cocok untuk pemilik warung kecil yang ingin mendigitalisasi pencatatan penjualan tanpa perlu sistem POS yang rumit.
 
-## ✨ Fitur
-- Login / Register pemilik warung (tersimpan di AsyncStorage)
-- Katalog produk (tambah, lihat, hapus produk — FlatList)
-- Tambah produk dengan foto (expo-image-picker)
-- Keranjang belanja dengan total harga otomatis
-- Checkout → tersimpan sebagai riwayat transaksi
-- Riwayat transaksi (persist setelah app ditutup)
-- Profil pemilik warung + logout
+---
+
+## 📸 Screenshots
+
+| Login Screen | Katalog Screen | Keranjang Screen |
+|:---:|:---:|:---:|
+| ![Login](assets/login.png) | ![Katalog](assets/katalog.png) | ![Keranjang](assets/keranjang.png) |
+
+---
+
+## ✨ Fitur Utama
+
+- [x] Login/Register dengan validasi form
+- [x] Daftar produk dengan FlatList (Katalog)
+- [x] Keranjang belanja dengan tambah/hapus item
+- [x] Riwayat transaksi tersimpan
+- [x] Tambah produk baru dengan foto via expo-image-picker
+- [x] Data persisten dengan AsyncStorage
+- [x] Bottom Tab Navigation (Katalog / Keranjang / Riwayat / Profil)
+
+---
 
 ## 🛠️ Tech Stack
-- React Native + Expo SDK 51
-- React Navigation (Native Stack + Bottom Tabs)
-- AsyncStorage (`@react-native-async-storage/async-storage`)
-- expo-image-picker
 
-## 📂 Struktur Folder
-```
-WarungDigital-UAS/
-├── App.js
-├── app.json
-├── eas.json
-├── package.json
-├── src/
-│   ├── navigation/AppNavigator.js
-│   ├── screens/
-│   │   ├── LoginScreen.js
-│   │   ├── KatalogScreen.js
-│   │   ├── TambahProdukScreen.js
-│   │   ├── KeranjangScreen.js
-│   │   ├── RiwayatScreen.js
-│   │   └── ProfilScreen.js
-│   ├── components/
-│   │   ├── ItemCard.js
-│   │   ├── LoadingSpinner.js
-│   │   └── EmptyState.js
-│   ├── services/storage.js
-│   └── constants/colors.js
-└── assets/
-```
+| Layer | Teknologi |
+|-------|-----------|
+| Framework | React Native + Expo |
+| Navigation | React Navigation v6 (Stack + Bottom Tab) |
+| Storage | @react-native-async-storage/async-storage |
+| Device | expo-image-picker |
+| Build | EAS Build (Expo Application Services) |
 
-## ▶️ Cara Menjalankan
+---
+
+## 🚀 Cara Menjalankan
+
 ```bash
+git clone https://github.com/Vnderbilts/warung-digital-uas.git
+cd warung-digital-uas
 npm install
 npx expo start
 ```
-Scan QR code dengan aplikasi **Expo Go** di HP.
+Scan QR Code dengan Expo Go di HP.
 
-## 📦 Build APK
-```bash
-npm install -g eas-cli
-eas login
-eas build --platform android --profile preview
-```
+---
 
-## 🔗 Link
-- GitHub Repo: `<isi link repo di sini>`
-- Expo Snack: `<isi link snack di sini>`
-- APK (EAS Build / Google Drive): `<isi link APK di sini>`
+## 📦 Download APK
 
-## 📸 Screenshots
-Lihat folder `assets/screenshots/` (minimal 3 screenshot alur utama: Login → Katalog → Keranjang/Checkout).
+[Download APK terbaru](LINK_APK_EAS_BUILD)
+
+---
+
+## 👤 Developer
+
+**Diki Simanjuntak** | 243303621208 | Kelas 4 Pagi A
+Universitas Prima Indonesia — Prodi Sistem Informasi
+Mata Kuliah: Pemrograman Mobile (TI-MOBILE-01)
