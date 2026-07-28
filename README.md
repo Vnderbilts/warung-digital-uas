@@ -48,18 +48,19 @@ cd warung-digital-uas
 npm install
 npx expo start
 ```
+
 Scan QR Code dengan Expo Go di HP.
 
 ---
 
 ## 📦 Download APK
 
-[Download APK terbaru](LINK_APK_EAS_BUILD)
+[Download APK terbaru](https://expo.dev/accounts/yonalidya/projects/warung-digital/builds/0056c773-64da-4d05-91f8-2e74ff279c2e)
 
 ---
 
 ## 👤 Developer
 
-**Diki Simanjuntak** | 243303621208 | Kelas 4 Pagi A
+**Diki Ferdianto** | 243303621208 | Kelas 4 Pagi A
 Universitas Prima Indonesia — Prodi Sistem Informasi
 Mata Kuliah: Pemrograman Mobile (TI-MOBILE-01)
